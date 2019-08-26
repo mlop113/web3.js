@@ -75,9 +75,9 @@ var WebsocketProvider = function WebsocketProvider(url, options)  {
     var parsedURL = parseURL(url);
     var headers = options.headers || {};
     var protocol = options.protocol || undefined;
-    if (parsedURL.username && parsedURL.password) {
-        headers.authorization = 'Basic ' + _btoa(parsedURL.username + ':' + parsedURL.password);
-    }
+   // if (parsedURL.username && parsedURL.password) {
+    //    headers.authorization = 'Basic ' + _btoa(parsedURL.username + ':' + parsedURL.password);
+  //  }
 
     // Allow a custom client configuration
     var clientConfig = options.clientConfig || undefined;
